@@ -6,3 +6,19 @@
     }
     
 }
+
+
+@media (max-width: 720px) {
+
+    .wrapper{  
+    display: flex;
+    flex-direction: column-reverse;
+    main{
+        flex: 1;
+    }
+        
+    }
+    
+
+}
+

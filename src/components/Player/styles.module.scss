@@ -2,8 +2,10 @@
     padding: 3rem 4rem;
     width: 26.5rem;
     height: 100vh;
+    
     background: var(--purple-500);
     color: var(--white);
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,10 +127,18 @@
             border-radius: 1rem;
             background: var(--purple-400);
       
-            &:hover:not(:disabled){
+                &:hover:not(:disabled){
                 filter: brightness(0.95);
             }
     
         }
+    }
+}
+
+@media (max-width: 720px) {
+    .playerContainer{
+        padding: 1rem 4rem;
+        width: 100%;
+        height: 100vh;
     }
 }
