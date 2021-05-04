@@ -7,6 +7,7 @@ import { api } from '../../services/api';
 import Image from 'next/image';
 import { convertDurationToTimeString } from '../../utils/convertDurationToTimeString';
 import styles from './episode.module.scss';
+import {EpisodeContainer } from './episodio'
 import {usePlayer } from '../../contexts/PlayerContext';
 
 type Episode = {
@@ -28,7 +29,9 @@ export default function Episode({ episode }: EpisodeProps) {
     const {play} = usePlayer();
   
     return (
+     
         <div className={styles.episode}>
+          <EpisodeContainer>
              <Head>
                    <title>{episode.title} | Podcastr</title>
              </Head>
@@ -40,8 +43,8 @@ export default function Episode({ episode }: EpisodeProps) {
                 </Link>
                
                 <Image
-                    width={700}
-                    height={160}
+                    width={720}
+                    height={300}
                     src={episode.thumbnail}
                     objectFit="cover"
                 />
@@ -59,6 +62,8 @@ export default function Episode({ episode }: EpisodeProps) {
              className={styles.description}
              dangerouslySetInnerHTML={{__html:episode.description}}
              />
+        </EpisodeContainer>
+
         </div>
     )
 

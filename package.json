@@ -9,17 +9,21 @@
     "server": "json-server server.json -W -d 750 -p 3333"
   },
   "dependencies": {
+    "@types/react-icons": "^3.0.0",
+    "@types/styled-components": "^5.1.9",
     "axios": "^0.21.1",
     "date-fns": "^2.21.1",
     "next": "10.1.3",
     "rc-slider": "^9.7.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "sass": "^1.32.11"
+    "react-icons": "^4.2.0",
+    "sass": "^1.32.11",
+    "styled-components": "^5.2.3"
   },
   "devDependencies": {
-    "@types/node": "^14.14.41",
-    "@types/react": "^17.0.3",
+    "@types/node": "^15.0.1",
+    "@types/react": "^17.0.4",
     "json-server": "^0.16.3",
     "typescript": "^4.2.4"
   }

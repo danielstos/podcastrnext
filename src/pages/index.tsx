@@ -12,7 +12,7 @@ import ptBR from 'date-fns/locale/pt-BR';
 import { usePlayer } from '../contexts/PlayerContext';
 import { convertDurationToTimeString } from '../utils/convertDurationToTimeString';
 import styles from './home.module.scss';
-
+import {HomepageContainer} from './episodes/home'
 
 
 type Episode = {
@@ -35,7 +35,7 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
   const { playList } = usePlayer();
   const episodeList = [...latestEpisodes, ...allEpisodes];
   return (
-    <div className={styles.homepage} >
+    <HomepageContainer >
     <Head>
       <title>Home | Podcastr</title>
     </Head>
@@ -124,7 +124,7 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
         </table>
 
       </section>
-    </div>
+    </HomepageContainer>
   )
 }
 
