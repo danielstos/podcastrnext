@@ -35,7 +35,7 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
   const { playList } = usePlayer();
   const episodeList = [...latestEpisodes, ...allEpisodes];
   return (
-    <HomepageContainer >
+    <HomepageContainer  className={styles.homepage}>
     <Head>
       <title>Home | Podcastr</title>
     </Head>

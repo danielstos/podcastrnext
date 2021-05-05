@@ -1,13 +1,10 @@
 import styled from "styled-components";
 
 
- const HomepageContainer = styled.div`
+const HomepageContainer = styled.div`
 
 
-    padding: 0 4rem;
-    height: calc(100vh - 6.5rem);
-    overflow-y: scroll;
-   
+    
 
     h2{
         color:${props => props.theme.colors.text.primary};
@@ -28,7 +25,7 @@ import styled from "styled-components";
         transition: all .5s linear;
        }
         
-     
+  
 
 `
 export default HomepageContainer;

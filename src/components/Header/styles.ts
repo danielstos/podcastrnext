@@ -22,5 +22,11 @@ import styled from "styled-components";
         text-transform: capitalize;
     }
 
+    @media (max-width: 480px){
+        padding: 1rem 1rem;
+        font-size:0.6rem;
+
+    }
+
 `
 export default Container;
