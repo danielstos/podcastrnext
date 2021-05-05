@@ -7,7 +7,7 @@ import { api } from '../../services/api';
 import Image from 'next/image';
 import { convertDurationToTimeString } from '../../utils/convertDurationToTimeString';
 import styles from './episode.module.scss';
-import {EpisodeContainer } from './episodio'
+import EpisodeContainer  from './episode'
 import {usePlayer } from '../../contexts/PlayerContext';
 
 type Episode = {

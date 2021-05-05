@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-//import '../styles/global.scss'
+import React from 'react'
 import {  ThemeProvider } from 'styled-components';
 import styles from '../styles/app.module.scss'
 import GlobalStyle from '../styles/global'
@@ -13,15 +12,6 @@ import {Toggle} from '../components/Toggle';
 
 function MyApp({ Component, pageProps }) {
 
-  /*
- const [theme, setTheme] = useState(dark);
-
-    const toggleTheme = ()=>{
-          setTheme(theme.title === 'light'? dark : light);    
-     
-      };
-     
-  */
     const [theme, toggleTheme] = useDarkMode();
    const themeMode = theme ==='light'? light:dark;
   return (

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-export const HomepageContainer = styled.div`
+ const HomepageContainer = styled.div`
 
 
     padding: 0 4rem;
@@ -31,3 +31,4 @@ export const HomepageContainer = styled.div`
      
 
 `
+export default HomepageContainer;

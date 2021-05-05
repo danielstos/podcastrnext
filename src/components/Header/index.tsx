@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from './styles';
+import Container from './styles';
 import format from 'date-fns/format';
 import ptBR from 'date-fns/locale/pt-BR';
 

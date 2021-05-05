@@ -12,7 +12,7 @@ import ptBR from 'date-fns/locale/pt-BR';
 import { usePlayer } from '../contexts/PlayerContext';
 import { convertDurationToTimeString } from '../utils/convertDurationToTimeString';
 import styles from './home.module.scss';
-import {HomepageContainer} from './episodes/home'
+import HomepageContainer from './episodes/home'
 
 
 type Episode = {

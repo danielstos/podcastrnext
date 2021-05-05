@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div` 
+ const Container = styled.div` 
 
     background:${props => props.theme.colors.background.primary};
     height: 4rem;
@@ -23,3 +23,4 @@ export const Container = styled.div`
     }
 
 `
+export default Container;
