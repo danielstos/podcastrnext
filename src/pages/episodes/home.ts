@@ -16,6 +16,7 @@ const HomepageContainer = styled.div`
        li{
            background:${props => props.theme.colors.background.secundary};
            transition: all .5s linear;
+            border: 1px solid ${props => props.theme.colors.text.primary};
        }
 
 
@@ -24,7 +25,11 @@ const HomepageContainer = styled.div`
         color:${props => props.theme.colors.text.primary};
         transition: all .5s linear;
        }
-        
+    
+
+    
+      
+     
   
 
 `

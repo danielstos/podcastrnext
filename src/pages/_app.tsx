@@ -1,6 +1,5 @@
 import React from 'react'
-import {  ThemeProvider } from 'styled-components';
-import styles from '../styles/app.module.scss'
+import { ThemeProvider } from 'styled-components';
 import GlobalStyle from '../styles/global'
 import { Header } from '../components/Header'
 import { Player } from '../components/Player'
@@ -9,6 +8,7 @@ import light from '../styles/themes/light';
 import dark from '../styles/themes/dark';
 import {useDarkMode} from '../styles/useDarkMode';
 import {Toggle} from '../components/Toggle';
+import styles from '../styles/app.module.scss'
 
 function MyApp({ Component, pageProps }) {
 
@@ -16,17 +16,14 @@ function MyApp({ Component, pageProps }) {
    const themeMode = theme ==='light'? light:dark;
   return (
     <ThemeProvider theme={themeMode}>    
-
         <PlayerContextProvider>
-          <div className={styles.wrapper}>
-            
+          <div className={styles.wrapper}>            
               <main>
                 <GlobalStyle />
                 <Toggle theme={theme} toggleTheme={toggleTheme}/>
                 <Header>
                 
-                </Header>
-        
+                </Header>    
              
                 <Component {...pageProps} />
               </main>

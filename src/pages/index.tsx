@@ -41,7 +41,6 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
     </Head>
       <section className={styles.latestEpisodes}>
         <h2>Últimos lançamentos</h2>
-
         <ul>
           {latestEpisodes.map((episode, index) => {
             return (
@@ -74,6 +73,42 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
           })}
         </ul>
       </section>
+      <div className={styles.latestEpisodes}>
+      <section className={styles.allEpisodesMobile}>
+      <h2>Todos episódios</h2>
+        <ul>
+          {allEpisodes.map((episode, index) => {
+            return (
+              <li key={episode.id}>
+                <div style={{ width: 100 }} >
+
+                  <Image
+                    width={192}
+                    height={192}
+                    src={episode.thumbnail}
+                    alt={episode.title}
+                    objectFit="cover"
+                  />
+                </div>
+
+                <div className={styles.episodeDetails} >
+                  <Link href={`/episodes/${episode.id}`}>
+                    <a >{episode.title}</a>
+                  </Link>
+                  <p>{episode.members}</p>
+                  <span>{episode.publishedAt}</span>
+                  <span>{episode.durationAsString}</span>
+                </div>
+
+                <button type='button' onClick={() => playList(episodeList,  index +latestEpisodes.length)}>
+                  <img src="/play-green.svg" alt="Tocar episódio" />
+                </button>
+              </li>
+            )
+          })}
+        </ul>
+      </section>
+      </div>
       <section className={styles.allEpisodes}>
         <h2>Todos episódios</h2>
 
